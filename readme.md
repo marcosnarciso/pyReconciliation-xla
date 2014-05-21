@@ -19,12 +19,17 @@ Requirements
 
 - Python 2.5, 2.6, or 3.1 (the python.org distribution) installed on your machine. Other distributions may work, but Pyinex hasn't been tested against anything else.
 
-Pyinex is developed with Visual C++ 2008 Express Edition, available free of charge from Microsoft. You can download it from their website.
+- Latest Pyinex project version, found at [Bitbucket](https://bitbucket.org/byates/pyinex).
 
 Examples
 --------
 
 In "test" folder has a example file.
+
+Pyinex
+------
+
+Pyinex is developed with Visual C++ 2008 Express Edition, available free of charge from Microsoft. You can download it from their website.
 
 XLW
 ---
@@ -34,4 +39,4 @@ Pyinex is written using the open-source XLW library (available at xlw.sourceforg
 License
 -------
 
-Pyinex is released under the modified BSD license; the license does not require the advertising clause present in the original BSD license. In particular, you can use Pyinex freely for commercial projects and products, and you do not need to expose or otherwise redistribute the resulting source code. You do need to include elements of the copyright notice, though - see the license comment at the top of all Pyinex files for details.
+Like Pyinex, pyReconciliation-xla is released under the modified BSD license; the license does not require the advertising clause present in the original BSD license. In particular, you can use it freely for commercial projects and products, and you do not need to expose or otherwise redistribute the resulting source code. You do need to include elements of the copyright notice, though - see the license comment at the top of all files for details.
