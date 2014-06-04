@@ -17,9 +17,13 @@ Requirements
 
 - Excel 2002, 2003, 2007 or 2010. I suppose it works well in Excel 2013, but I've not tested yet.
 
-- Python 2.5, 2.6, or 3.1 (the python.org distribution) installed on your machine. Other distributions may work, but Pyinex hasn't been tested against anything else.
+- Python 2.7 (the python.org distribution) installed on your machine. Other versions or distributions of Python may work, but some code should be rewritten.
 
-- Latest Pyinex project version, found at [Bitbucket](https://bitbucket.org/byates/pyinex).
+- Latest AlgoPy version, available at [Python Packages](https://pypi.python.org/pypi/algopy);
+
+- Latest CVXOPT solver version, available at [GitHub](https://github.com/cvxopt/cvxopt);
+
+- Latest Pyinex project version, available at [Bitbucket](https://bitbucket.org/byates/pyinex).
 
 Examples
 --------
