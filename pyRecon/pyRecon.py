@@ -13,7 +13,7 @@ class pyRecon:
 		self.lb = matrix(lb)
 		self.ub = matrix(ub)
 		self.N = self.x.size[0]
-		self.P = spmatrix(1.0, list(range(self.N)), list(range(self.N)))
+		self.P = spmatrix(1.0, list(range(self.N)), list(range(self.N)), tc='d')
 		self.G = matrix([-self.P, self.P])
 		self.h = matrix([self.ub - self.x, self.x - self.lb])
 		self.A = self.obterIncidencia()
@@ -22,7 +22,7 @@ class pyRecon:
 
 	def calcularQIReconciliada(self):
 		" Calcula a QI após a reconciliação de dados"
-		I = spmatrix(1.0, range(self.N), range(self.N))
+		I = spmatrix(1.0, range(self.N), range(self.N), tc='d')
 		U = matrix(0.0, (self.N, self.N), 'd')
 		self.QIr = matrix(0.0, (self.N + 1, 1), 'd')
 
@@ -68,8 +68,8 @@ class pyRecon:
 		b = self.A * self.x
 
 		# Resolvendo o sistema via CVXOPT
-		sol = solvers.qp(P=self.P, q=q, A=self.A, b=b, G=self.G, h=self.h)
-
+		sol = solvers.coneqp(P=self.P, q=q, A=self.A, b=b, G=self.G, h=self.h)
+		
 		# Corrigindo a solução ==> y_opt = x - y
 		self.y = self.x - sol['x']
 		return

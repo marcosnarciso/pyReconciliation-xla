@@ -9,25 +9,25 @@ Source: pyRecon\pyRecon.pyc; DestDir: {app}\pyRecon; Flags: confirmoverwrite pro
 
 [Setup]
 AppName=Data Reconciliation Supplement for MS Excel
-AppVerName=Data Reconciliation Supplement for MS Excel 0.9a
+AppVerName=Data Reconciliation Supplement for MS Excel 0.91a
 EnableDirDoesntExistWarning=true
 AppID={{55526959-AC1B-4F73-9D57-7CC230726F0D}
 MinVersion=5.0.2195
 LicenseFile=license.txt
 DefaultDirName={pf}\Microsoft Office\{code:OfficeVersion}\pyRecon
 AlwaysShowDirOnReadyPage=false
-AppVersion=0.9a0
+AppVersion=0.91a0
 UninstallDisplayName=Data Reconciliation Supplement for MS Excel
 DefaultGroupName=Data Reconciliation Supplement for MS Excel
 AllowUNCPath=true
 AlwaysShowGroupOnReadyPage=false
 ShowTasksTreeLines=true
-VersionInfoVersion=0.9
+VersionInfoVersion=0.91
 VersionInfoCompany=UFBA/TECLIM
 VersionInfoProductName=Data Reconciliation Supplement for MS Excel
-VersionInfoProductVersion=0.9
+VersionInfoProductVersion=0.91
 AppPublisherURL=https://bitbucket.org/marcosnarciso/pyreconciliation-xla
-OutputBaseFilename=setup-0.9a
+OutputBaseFilename=setup-0.91a
 Compression=lzma
 SolidCompression=Yes
 
